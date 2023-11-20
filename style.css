@@ -1,0 +1,334 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins";
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            padding: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #098cff;
+            margin: 3px;
+            border-radius: 15px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            overflow-x: hidden;
+            /* color: #1fcb92; */
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            z-index: 99;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            animation: load linear 1s;
+            height: 60px;
+            padding: 0 55px;
+            background: transparent;
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            /* background: #558de8; */
+        }
+
+        .logo {
+            height: 45px;
+            border: solid 2px rgb(83, 148, 228);
+            outline: none;
+            border-radius: 3px;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            position: relative;
+        }
+
+        nav ul li a::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #e45a53;
+            bottom: 0;
+            left: 0;
+            transition: width 0.25s;
+        }
+
+        nav ul li a:hover::before {
+            width: 100%;
+        }
+
+        .sec_1 {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(ship.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .sec_2 {
+            padding: 4em 0;
+            position: relative;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sec_3 {
+            padding: 4em 0;
+            position: relative;
+            background: teal;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sec_4 {
+            padding: 4em 0;
+            position: relative;
+            background: rgb(249, 103, 77);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hp {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            color: #fff;
+        }
+
+        .hp span {
+            font-size: 22px;
+            margin: 8px 0;
+        }
+
+        .hp h1 {
+            font-size: 40px;
+            letter-spacing: 0.040em;
+            margin: 0 0 10px 0;
+            text-transform: capitalize;
+        }
+
+        .hp a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            background: rgb(83, 148, 228);
+            padding: 5px 20px;
+            border-radius: 2px;
+            border: solid 1px #fff;
+            margin: 10px 0;
+            transition: all 0.3s ease;
+        }
+
+        .hp a:hover {
+            background: #000000a2;
+        }
+
+        .sec_2 h1,
+        .sec_4 h1 {
+            text-align: center;
+            margin: 0 auto;
+            font-size: 34px;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: underline #fff 2px;
+            text-underline-offset: 5px;
+
+        }
+
+        .holder {
+            display: flex;
+            flex-direction: column;
+            max-width: 450px;
+            margin: 30px 0;
+            justify-content: center;
+            align-items: center;
+            /* box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); */
+            border: solid 2px #fff;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .holder img {
+            width: 450px;
+            max-height: 250px;
+            margin: 0;
+            padding: 1px;
+            border-radius: 0;
+        }
+
+        .holder h3 {
+            text-align: justify;
+            color: tomato;
+            font-weight: 500;
+            letter-spacing: normal;
+            background: #172d36;
+            padding: 5px;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .sec_3 h1 {
+            text-align: center;
+            margin: 0 auto;
+            font-size: 34px;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: underline #fff 2px;
+            text-underline-offset: 5px;
+        }
+
+        .sec_3 h3 {
+            color: #fff;
+            font-weight: normal;
+        }
+
+        .card_holder {
+            margin: 30px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 15px;
+            border: 2px solid #fff;
+            border-radius: 7px 7px 0 0;
+        }
+
+        .card img {
+            height: 180px;
+            width: 300px;
+            margin: 0 0 5px 0;
+            border-bottom: #fff solid 2px;
+            border-radius: 7px 7px 0 0;
+        }
+
+        .card span {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 600;
+            margin: 3px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+        }
+
+        form input {
+            margin: 10px 0 5px;
+            height: 35px;
+            width: 400px;
+            padding: 10px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            color: rgb(41, 43, 43);
+            font-size: 16px;
+        }
+
+        form textarea {
+            margin: 10px 0 5px;
+            height: 100px;
+            max-width: 400px;
+            padding: 5px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            color: rgb(41, 43, 43);
+            font-size: 15px;
+        }
+
+        input[type="submit"] {
+            background: #7286a2;
+            width: 100px;
+            border: solid 2px snow;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background: rgba(23, 24, 24, 0.526);
+
+        }
+
+        .footer {
+            padding: 4.5em;
+            background: #0b171c;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            transition: all 0.3s;
+        }
+
+        .footer a:hover {
+            color: rgb(35, 110, 154);
+        }
+
+        @keyframes load {
+            0% {
+                top: -100px;
+                visibility: 0;
+                filter: blur(5px);
+            }
+
+            100% {
+                top: 15px;
+                visibility: 1;
+            }
+        }
